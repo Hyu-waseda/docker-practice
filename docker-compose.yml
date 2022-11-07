@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  nginx3000:
+    build:
+      context: . #docker buildコマンドを呼び出したときのワーキングディレクトリ
+      dockerfile: ./test1/Dockerfile #Dockerfileの場所
+    ports:
+      - 3001:80
+  nginx:
+    build:
+      context: .
+      dockerfile: ./test2/Dockerfile
+    ports:
+      - 80:80
