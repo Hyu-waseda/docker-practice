@@ -13,6 +13,7 @@ docker run -it (REPOSITORY_NAMEまたはIMAGE_ID) CMD
 docker run -d -p 8080:80(REPOSITORY_NAMEまたはIMAGE_ID) CMD
 ```
 -d ... 抜けても起動継続
+
 -p ... 自分のポート：仮想環境のポート
 
 起動しているコンテナでコマンドを実行
@@ -76,7 +77,8 @@ docker-compose down
 ## その他コマンド
 イメージ一覧
 ```shell
-docker images ls 
+docker image ls 
+docker images
 ```
 
 コンテナ一覧
